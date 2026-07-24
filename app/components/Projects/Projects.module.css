@@ -1,0 +1,287 @@
+.projects {
+
+  padding:140px 60px;
+
+  background:#050505;
+
+  color:white;
+
+}
+
+
+.projects h2 {
+
+  font-size:60px;
+
+  margin-bottom:60px;
+
+  font-weight:800;
+
+  letter-spacing:-2px;
+
+}
+
+
+.card {
+
+  max-width:1100px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:50px;
+
+  padding:35px;
+
+  background:#101010;
+
+  border:1px solid rgba(255,255,255,.08);
+
+  position:relative;
+
+  overflow:hidden;
+
+  transition:.4s;
+
+}
+
+
+
+/* neon animation */
+
+.card::before {
+
+  content:"";
+
+  position:absolute;
+
+  width:200%;
+
+  height:200%;
+
+  background:
+
+    linear-gradient(
+      120deg,
+      transparent,
+      rgba(57,255,20,.18),
+      transparent
+    );
+
+  top:-50%;
+
+  left:-100%;
+
+  transition:.8s;
+
+}
+
+
+.card:hover::before {
+
+  left:100%;
+
+}
+
+
+
+.card:hover {
+
+  transform:translateY(-10px);
+
+  border-color:#39ff14;
+
+  box-shadow:
+
+    0 0 40px rgba(57,255,20,.15);
+
+}
+
+
+
+.image {
+
+  height:350px;
+
+  overflow:hidden;
+
+}
+
+
+
+.projectImage {
+
+  width:100%;
+
+  height:100%;
+
+  object-fit:cover;
+
+  transition:.5s;
+
+}
+
+
+
+.card:hover .projectImage {
+
+  transform:scale(1.08);
+
+}
+
+
+
+.content {
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+}
+
+
+
+.content h3 {
+
+  font-size:36px;
+
+  margin-bottom:20px;
+
+}
+
+
+
+.content p {
+
+  color:#999;
+
+  line-height:1.7;
+
+  font-size:17px;
+
+}
+
+
+
+.tags {
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  margin-top:30px;
+
+}
+
+
+
+.tags span {
+
+  padding:8px 16px;
+
+  border:1px solid #39ff14;
+
+  color:#39ff14;
+
+  font-size:13px;
+
+  letter-spacing:.5px;
+
+}
+
+
+
+.links {
+
+  display:flex;
+
+  gap:20px;
+
+  margin-top:35px;
+
+}
+
+
+
+.links a {
+
+  padding:12px 28px;
+
+  border:1px solid #39ff14;
+
+  color:white;
+
+  text-decoration:none;
+
+  transition:.3s;
+
+}
+
+
+
+.links a:hover {
+
+  background:#39ff14;
+
+  color:black;
+
+  box-shadow:
+
+    0 0 20px #39ff14;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+.projects {
+
+  padding:100px 25px;
+
+}
+
+
+
+.projects h2 {
+
+  font-size:42px;
+
+}
+
+
+
+.card {
+
+  grid-template-columns:1fr;
+
+  padding:25px;
+
+}
+
+
+
+.image {
+
+  height:250px;
+
+}
+
+
+
+.content h3 {
+
+  font-size:30px;
+
+}
+
+
+}

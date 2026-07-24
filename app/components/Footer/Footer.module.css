@@ -1,0 +1,57 @@
+.footer {
+
+  padding:40px 60px;
+
+  background:#050505;
+
+  color:#777;
+
+  border-top:1px solid rgba(255,255,255,.08);
+
+  text-align:center;
+
+  position:relative;
+
+}
+
+
+.footer::before {
+
+  content:"";
+
+  display:block;
+
+  width:120px;
+
+  height:2px;
+
+  background:#39ff14;
+
+  box-shadow:
+    0 0 15px #39ff14;
+
+  margin:0 auto 30px;
+
+}
+
+
+.footer p {
+
+  font-size:14px;
+
+  letter-spacing:1px;
+
+}
+
+
+
+@media(max-width:768px){
+
+  .footer {
+
+    padding:35px 25px;
+
+  }
+
+
+}
