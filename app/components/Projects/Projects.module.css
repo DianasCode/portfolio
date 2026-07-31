@@ -6,8 +6,12 @@
 
   color:white;
 
+  overflow:hidden;
+
 }
 
+
+/* TITLE */
 
 .projects h2 {
 
@@ -22,11 +26,14 @@
 }
 
 
+
+/* CARD */
+
 .card {
 
   max-width:1100px;
 
-  margin:auto;
+  margin:0 auto 60px;
 
   display:grid;
 
@@ -46,11 +53,15 @@
 
   transition:.4s;
 
+  border-radius:25px;
+
 }
 
 
 
-/* neon animation */
+
+
+/* LIGHT EFFECT */
 
 .card::before {
 
@@ -64,12 +75,13 @@
 
   background:
 
-    linear-gradient(
-      120deg,
-      transparent,
-      rgba(57,255,20,.18),
-      transparent
-    );
+  linear-gradient(
+    120deg,
+    transparent,
+    rgba(57,255,20,.15),
+    transparent
+  );
+
 
   top:-50%;
 
@@ -78,6 +90,7 @@
   transition:.8s;
 
 }
+
 
 
 .card:hover::before {
@@ -96,19 +109,30 @@
 
   box-shadow:
 
-    0 0 40px rgba(57,255,20,.15);
+  0 0 40px rgba(57,255,20,.15);
 
 }
 
 
 
+
+
+/* IMAGE */
+
+
 .image {
+
+  width:100%;
 
   height:350px;
 
   overflow:hidden;
 
+  border-radius:18px;
+
 }
+
+
 
 
 
@@ -132,6 +156,11 @@
 
 }
 
+
+
+
+
+/* CONTENT */
 
 
 .content {
@@ -168,6 +197,11 @@
 
 
 
+
+
+/* TAGS */
+
+
 .tags {
 
   display:flex;
@@ -192,15 +226,22 @@
 
   font-size:13px;
 
-  letter-spacing:.5px;
+  border-radius:20px;
 
 }
 
 
 
+
+
+/* LINKS */
+
+
 .links {
 
   display:flex;
+
+  flex-wrap:wrap;
 
   gap:20px;
 
@@ -222,6 +263,8 @@
 
   transition:.3s;
 
+  border-radius:10px;
+
 }
 
 
@@ -234,10 +277,15 @@
 
   box-shadow:
 
-    0 0 20px #39ff14;
+  0 0 20px #39ff14;
 
 }
 
+
+
+
+
+/* TABLET */
 
 
 @media(max-width:900px){
@@ -263,6 +311,8 @@
 
   grid-template-columns:1fr;
 
+  gap:30px;
+
   padding:25px;
 
 }
@@ -271,7 +321,7 @@
 
 .image {
 
-  height:250px;
+  height:300px;
 
 }
 
@@ -280,6 +330,176 @@
 .content h3 {
 
   font-size:30px;
+
+}
+
+
+
+.content p {
+
+  font-size:16px;
+
+}
+
+
+
+}
+
+
+
+
+
+/* MOBILE */
+
+
+@media(max-width:600px){
+
+
+.projects {
+
+  padding:80px 16px;
+
+}
+
+
+
+.projects h2 {
+
+  font-size:34px;
+
+  margin-bottom:35px;
+
+  letter-spacing:-1px;
+
+}
+
+
+
+.card {
+
+  width:100%;
+
+  padding:20px;
+
+  gap:25px;
+
+  border-radius:20px;
+
+}
+
+
+
+.image {
+
+  height:220px;
+
+}
+
+
+
+.content h3 {
+
+  font-size:26px;
+
+}
+
+
+
+.content p {
+
+  font-size:15px;
+
+  line-height:1.6;
+
+}
+
+
+
+.tags {
+
+  gap:8px;
+
+  margin-top:20px;
+
+}
+
+
+
+.tags span {
+
+  font-size:12px;
+
+  padding:7px 12px;
+
+}
+
+
+
+.links {
+
+  flex-direction:column;
+
+  gap:12px;
+
+  margin-top:25px;
+
+}
+
+
+
+.links a {
+
+  width:100%;
+
+  text-align:center;
+
+  box-sizing:border-box;
+
+}
+
+
+
+}
+
+
+
+
+
+/* SMALL PHONES */
+
+
+@media(max-width:380px){
+
+
+.projects {
+
+  padding-left:12px;
+
+  padding-right:12px;
+
+}
+
+
+
+.card {
+
+  padding:16px;
+
+}
+
+
+
+.image {
+
+  height:190px;
+
+}
+
+
+
+.content h3 {
+
+  font-size:23px;
 
 }
 
