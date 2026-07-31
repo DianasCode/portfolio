@@ -16,21 +16,21 @@ export default function About() {
         className={styles.container}
 
         initial={{
-          opacity: 0,
-          y: 50
+          opacity:0,
+          y:50
         }}
 
         whileInView={{
-          opacity: 1,
-          y: 0
+          opacity:1,
+          y:0
         }}
 
         viewport={{
-          once: true
+          once:true
         }}
 
         transition={{
-          duration: 0.8
+          duration:0.8
         }}
 
       >
@@ -40,62 +40,99 @@ export default function About() {
         </p>
 
 
+
         <h2>
-          Creating modern websites
+
+          Building modern web experiences
+
           <span>
-            with clean and elegant design.
+            with clean design and powerful technologies.
           </span>
+
         </h2>
 
 
+
+
+
         <p className={styles.text}>
-          I am a Frontend Developer focused on creating modern,
-          responsive and visually engaging websites.
 
-          I work with React, Next.js and JavaScript to build
-          fast, user-friendly websites with attention to design,
-          performance and detail.
+          I am a Frontend Developer focused on creating
+          modern, responsive and user-friendly web applications.
 
-          I started my journey in frontend development in 2024
-          and continue improving my skills by creating real projects.
+          I work with React, Next.js and TypeScript to build
+          fast and scalable interfaces with attention to
+          performance, accessibility and design.
+
+          I create real-world projects including AI-powered
+          applications, authentication systems, dashboards
+          and database-driven platforms using technologies
+          like Supabase and Vercel.
+
+          I started my frontend journey in 2024 and continue
+          improving my skills by building practical projects
+          and exploring modern web technologies.
+
         </p>
+
+
+
 
 
         <div className={styles.info}>
 
+
           <div>
+
             <strong>
               2024
             </strong>
+
             <p>
-              Started Frontend Journey
+              Started Frontend Development
             </p>
+
           </div>
 
 
-          <div>
-            <strong>
-              React
-            </strong>
-            <p>
-              Modern Websites
-            </p>
-          </div>
+
 
 
           <div>
+
             <strong>
               Next.js
             </strong>
+
             <p>
-              Frontend Development
+              Modern Web Applications
             </p>
+
           </div>
+
+
+
+
+
+          <div>
+
+            <strong>
+              AI + Supabase
+            </strong>
+
+            <p>
+              Full-stack Projects
+            </p>
+
+          </div>
+
+
 
         </div>
 
 
       </motion.div>
+
 
     </section>
   );

@@ -7,7 +7,10 @@ import styles from "./Hero.module.css";
 export default function Hero() {
 
   return (
-    <section id="home" className={styles.hero}>
+    <section 
+      id="home" 
+      className={styles.hero}
+    >
 
       <div className={styles.glow}></div>
 
@@ -34,8 +37,9 @@ export default function Hero() {
 
 
         <p className={styles.subtitle}>
-          FRONTEND DEVELOPER
+          FRONTEND DEVELOPER • REACT & NEXT.JS
         </p>
+
 
 
         <h1>
@@ -44,6 +48,9 @@ export default function Hero() {
             {" "}Arustamova
           </span>
         </h1>
+
+
+
 
 
         <motion.p
@@ -64,26 +71,38 @@ export default function Hero() {
           }}
 
         >
-          I create modern digital experiences with React and Next.js.
-          Building fast, responsive and elegant web applications.
+
+          I build modern web applications with React and Next.js.
+          Creating fast, responsive and visually engaging digital
+          experiences with clean design and attention to detail.
+
         </motion.p>
 
 
+
+
+
         <div className={styles.buttons}>
+
 
           <a href="#projects">
             View Projects
           </a>
 
 
+
           <a href="#contact">
             Contact Me
           </a>
 
+
+
         </div>
 
 
+
       </motion.div>
+
 
 
     </section>
