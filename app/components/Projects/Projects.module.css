@@ -27,6 +27,8 @@
 
 
 
+
+
 /* CARD */
 
 .card {
@@ -61,8 +63,6 @@
 
 
 
-/* LIGHT EFFECT */
-
 .card::before {
 
   content:"";
@@ -72,6 +72,7 @@
   width:200%;
 
   height:200%;
+
 
   background:
 
@@ -117,10 +118,12 @@
 
 
 
-/* IMAGE */
+
+/* IMAGE + SLIDER */
 
 
-.image {
+.image,
+.imageSlider {
 
   width:100%;
 
@@ -130,8 +133,9 @@
 
   border-radius:18px;
 
-}
+  position:relative;
 
+}
 
 
 
@@ -152,9 +156,158 @@
 
 .card:hover .projectImage {
 
-  transform:scale(1.08);
+  transform:scale(1.05);
 
 }
+
+
+
+
+
+
+
+/* SLIDER BUTTONS */
+
+
+.prev,
+.next {
+
+
+  position:absolute;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+
+  width:45px;
+
+  height:45px;
+
+
+  border-radius:50%;
+
+
+  border:none;
+
+
+  background:rgba(0,0,0,.65);
+
+
+  color:white;
+
+
+  font-size:32px;
+
+
+  cursor:pointer;
+
+
+  z-index:5;
+
+
+  transition:.3s;
+
+
+}
+
+
+
+.prev {
+
+  left:15px;
+
+}
+
+
+
+.next {
+
+  right:15px;
+
+}
+
+
+
+.prev:hover,
+.next:hover {
+
+
+  background:#39ff14;
+
+  color:black;
+
+}
+
+
+
+
+
+
+
+/* DOTS */
+
+
+.dots {
+
+
+  position:absolute;
+
+
+  bottom:15px;
+
+
+  left:50%;
+
+
+  transform:translateX(-50%);
+
+
+  display:flex;
+
+
+  gap:10px;
+
+
+}
+
+
+
+.dots span {
+
+
+  width:10px;
+
+  height:10px;
+
+
+  background:white;
+
+
+  opacity:.5;
+
+
+  border-radius:50%;
+
+
+  cursor:pointer;
+
+
+}
+
+
+
+.dots .activeDot {
+
+
+  background:#39ff14;
+
+  opacity:1;
+
+}
+
+
+
 
 
 
@@ -199,6 +352,8 @@
 
 
 
+
+
 /* TAGS */
 
 
@@ -218,17 +373,25 @@
 
 .tags span {
 
+
   padding:8px 16px;
+
 
   border:1px solid #39ff14;
 
+
   color:#39ff14;
+
 
   font-size:13px;
 
+
   border-radius:20px;
 
+
 }
+
+
 
 
 
@@ -239,13 +402,17 @@
 
 .links {
 
+
   display:flex;
 
   flex-wrap:wrap;
 
+
   gap:20px;
 
+
   margin-top:35px;
+
 
 }
 
@@ -253,17 +420,24 @@
 
 .links a {
 
+
   padding:12px 28px;
+
 
   border:1px solid #39ff14;
 
+
   color:white;
+
 
   text-decoration:none;
 
+
   transition:.3s;
 
+
   border-radius:10px;
+
 
 }
 
@@ -271,15 +445,20 @@
 
 .links a:hover {
 
+
   background:#39ff14;
+
 
   color:black;
 
-  box-shadow:
 
-  0 0 20px #39ff14;
+  box-shadow:0 0 20px #39ff14;
+
 
 }
+
+
+
 
 
 
@@ -309,19 +488,26 @@
 
 .card {
 
+
   grid-template-columns:1fr;
+
 
   gap:30px;
 
+
   padding:25px;
+
 
 }
 
 
 
-.image {
+.image,
+.imageSlider {
+
 
   height:300px;
+
 
 }
 
@@ -342,8 +528,9 @@
 }
 
 
-
 }
+
+
 
 
 
@@ -365,11 +552,12 @@
 
 .projects h2 {
 
+
   font-size:34px;
+
 
   margin-bottom:35px;
 
-  letter-spacing:-1px;
 
 }
 
@@ -377,21 +565,29 @@
 
 .card {
 
+
   width:100%;
+
 
   padding:20px;
 
+
   gap:25px;
 
+
   border-radius:20px;
+
 
 }
 
 
 
-.image {
+.image,
+.imageSlider {
+
 
   height:220px;
+
 
 }
 
@@ -399,7 +595,9 @@
 
 .content h3 {
 
+
   font-size:26px;
+
 
 }
 
@@ -407,9 +605,9 @@
 
 .content p {
 
+
   font-size:15px;
 
-  line-height:1.6;
 
 }
 
@@ -417,9 +615,12 @@
 
 .tags {
 
+
   gap:8px;
 
+
   margin-top:20px;
+
 
 }
 
@@ -427,9 +628,12 @@
 
 .tags span {
 
+
   font-size:12px;
 
+
   padding:7px 12px;
+
 
 }
 
@@ -437,11 +641,12 @@
 
 .links {
 
+
   flex-direction:column;
+
 
   gap:12px;
 
-  margin-top:25px;
 
 }
 
@@ -449,17 +654,39 @@
 
 .links a {
 
+
   width:100%;
+
 
   text-align:center;
 
-  box-sizing:border-box;
+
+}
+
+
+
+
+
+.prev,
+.next {
+
+
+  width:38px;
+
+
+  height:38px;
+
+
+  font-size:25px;
+
 
 }
 
 
 
 }
+
+
 
 
 
@@ -473,9 +700,11 @@
 
 .projects {
 
+
   padding-left:12px;
 
   padding-right:12px;
+
 
 }
 
@@ -483,15 +712,20 @@
 
 .card {
 
+
   padding:16px;
+
 
 }
 
 
 
-.image {
+.image,
+.imageSlider {
+
 
   height:190px;
+
 
 }
 
@@ -499,7 +733,9 @@
 
 .content h3 {
 
+
   font-size:23px;
+
 
 }
 
