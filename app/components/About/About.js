@@ -56,24 +56,22 @@ export default function About() {
 
 
         <p className={styles.text}>
+  Passionate Frontend Developer focused on building modern,
+  responsive, and user-friendly web applications.
 
-          I am a Frontend Developer focused on creating
-          modern, responsive and user-friendly web applications.
+  Using React, Next.js, and TypeScript to create fast,
+  scalable interfaces with a strong emphasis on performance,
+  accessibility, and clean design.
 
-          I work with React, Next.js and TypeScript to build
-          fast and scalable interfaces with attention to
-          performance, accessibility and design.
+  Experience includes developing real-world projects such as
+  AI-powered applications, authentication systems,
+  dashboards, and database-driven platforms with technologies
+  like Supabase and Vercel.
 
-          I create real-world projects including AI-powered
-          applications, authentication systems, dashboards
-          and database-driven platforms using technologies
-          like Supabase and Vercel.
-
-          I started my frontend journey in 2024 and continue
-          improving my skills by building practical projects
-          and exploring modern web technologies.
-
-        </p>
+  Since starting the frontend journey in 2024, continuous
+  learning has remained a priority through hands-on projects
+  and exploring the latest web technologies.
+</p>
 
 
 
